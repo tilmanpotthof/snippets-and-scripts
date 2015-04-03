@@ -1,6 +1,22 @@
-# My personal snippet collection
+# snippets-and-scripts
 
-## Bash
+> personal snippet collection with a global run script
+
+## Install
+
+Symbolic link to your path.
+
+    ln -s /path/to/snippets-and-scripts/run-snippet.sh /usr/local/bin/run-snippet
+
+To execute a snippet append the script name and arguments
+
+    run-snippet <snippet-name> [<args>]
+
+Example
+
+    run-snippet create-branch-from-issue fish-shell/fish-shell 1963
+
+## Copy paste snippets
 
 ### rename multiple files
     
