@@ -1,0 +1,4 @@
+usage: ${0} <snippet-name> [<args>]
+
+    create-branch-from-issue    Fetches issue name and create a git branch
+ 

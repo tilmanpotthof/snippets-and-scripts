@@ -16,10 +16,9 @@ EXPECTED_SCRIPT_PATH=$SNIPPETS_PATH/$BASE_CMD.sh
 
 
 if [ -z $1 ] || [ ! -f $EXPECTED_SCRIPT_PATH ]; then
-	eval echo "\"$(cat run-snippet.txt)\""
+	eval echo "\"$(cat docs/run-snippet.txt)\""
     exit 1
 fi
 
 $EXPECTED_SCRIPT_PATH $2 $3 $4 $5
 
-# install: ln -s /Users/tpotthof/Development/snippets-and-scripts/run-snippet.sh /usr/local/bin/run-snippet
