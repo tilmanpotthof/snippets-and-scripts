@@ -11,6 +11,7 @@ if ([ -z $ISSUE_NUMBER_INPUT ] || [ -z $REPOSITORY ]); then
    echo 'usage: '$BASE_CMD' <repository-name> <issue-number>'
    echo
    echo 'example: '$BASE_CMD' tilmanpotthof/snippets-and-scripts 11'
+   echo
    exit 0
 fi
 
