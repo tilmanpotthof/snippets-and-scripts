@@ -1,4 +1,6 @@
 usage: ${0} <snippet-name> [<args>]
 
+Available snippet names:
     create-branch-from-issue    Fetches issue name and create a git branch
+    rename-files                Renames multiple files in a directory
  

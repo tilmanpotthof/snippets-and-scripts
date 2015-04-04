@@ -20,5 +20,5 @@ if [ -z $1 ] || [ ! -f $EXPECTED_SCRIPT_PATH ]; then
     exit 1
 fi
 
-$EXPECTED_SCRIPT_PATH $2 $3 $4 $5
+$EXPECTED_SCRIPT_PATH ${@:2}
 
