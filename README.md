@@ -30,7 +30,9 @@ To execute a snippet append the script name and arguments
 
 ## Copy paste snippets
 
-### rename multiple files in directory
+### Bash
+
+#### rename multiple files in directory
     
 	FILE_PATTERN="*.jpg"
 	FILE_PREFIX="my_new_file_"
@@ -42,3 +44,9 @@ To execute a snippet append the script name and arguments
 	   mv "${FILE}" "${NEW_FILENAME}"
 	   i=$(($i+1));
 	done
+
+### git
+
+#### Diff by single chars
+
+     git diff --word-diff --word-diff-regex='[^[:space:]]'
