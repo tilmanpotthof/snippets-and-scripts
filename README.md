@@ -17,6 +17,8 @@ To execute a snippet append the script name and arguments
 	Available snippet names:
 	    create-branch-from-issue    Fetches issue name and create a git branch
 	    rename-files                Renames multiple files in a directory
+	    branch-status               Shows ahead/behind status for all local branches
+
 	 
 ### create-branch-from-issue
 
@@ -27,6 +29,12 @@ To execute a snippet append the script name and arguments
 
 	usage: rename-files <file-pattern> <new-file-prefix> <new-file-suffix>
 	example: rename-files "*.jpg" my-picture .jpg
+
+### branch-status
+
+Can only be used inside a git repository
+
+    useage: branch-status
 
 ## Copy paste snippets
 
