@@ -20,9 +20,13 @@ fi
 
 i=1;
 
+OIFS="$IFS"
+IFS=$'\n'
+
 for FILE in $(ls $FILE_PATTERN);
 do
   NEW_FILENAME=`printf %s%03d%s ${FILE_PREFIX} ${i} ${FILE_SUFFIX}`
+  echo "rename '"${FILE}"' -> '"${NEW_FILENAME}"'"
   mv "${FILE}" "${NEW_FILENAME}"
   i=$(($i+1));
 done
