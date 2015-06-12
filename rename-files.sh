@@ -4,7 +4,7 @@ FILE_PATTERN=$1
 FILE_PREFIX=$2
 FILE_SUFFIX=$3
 
-if ([ -z $FILE_PATTERN ] || [ -z $FILE_PREFIX ] || [ -z $FILE_SUFFIX ]); then
+if ([ -z "$FILE_PATTERN" ] || [ -z "$FILE_PREFIX" ] || [ -z "$FILE_SUFFIX" ]); then
    echo 'usage: '$BASE_CMD' <file-pattern> <new-file-prefix> <new-file-suffix>'
    echo
    echo 'example: '$BASE_CMD' "*.jpg" my-picture .jpg'
