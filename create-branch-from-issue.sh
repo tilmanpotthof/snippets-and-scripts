@@ -27,7 +27,7 @@ ISSUE_NAME=$(echo 'console.log('$JSON'.title)' | node)
 DASHED_ISSUE_NAME=$(echo $ISSUE_NAME | tr ' ' '-')
 ESCAPED_ISSUE_NAME=$(echo $DASHED_ISSUE_NAME | sed -e 's/[`:"()]//g' | sed -e 's/\$/\\\$/g')
 
-COMMAND='git checkout -b "issue-'$ISSUE_NUMBER'/'$ESCAPED_ISSUE_NAME'"'
+COMMAND='git checkout -b "issue/'$ISSUE_NUMBER'-'$ESCAPED_ISSUE_NAME'"'
 
 while [[ ! $EXECUTE =~ ^[YyNn]$ ]]
 do
