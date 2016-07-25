@@ -4,9 +4,9 @@
 
 ## Install
 
-Symbolic link to your path.
+Run install script.
 
-    ln -s /path/to/snippets-and-scripts/run-snippet.sh /usr/local/bin/run-snippet
+    ./install.sh
 
 ## Usage
 
@@ -19,7 +19,6 @@ To execute a snippet append the script name and arguments
 	    rename-files                Renames multiple files in a directory
 	    branch-status               Shows ahead/behind status for all local branches
 
-	 
 ### create-branch-from-issue
 
 	usage: create-branch-from-issue <repository-name> <issue-number>
