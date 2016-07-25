@@ -16,7 +16,7 @@ EXPECTED_SCRIPT_PATH=$SNIPPETS_PATH/$BASE_CMD.sh
 
 
 if [ -z $1 ] || [ ! -f $EXPECTED_SCRIPT_PATH ]; then
-    eval echo "\"$(cat docs/run-snippet.txt)\""
+    eval echo "\"$(cat $SNIPPETS_PATH/docs/run-snippet.txt)\""
     exit 1
 fi
 
